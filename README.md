@@ -58,8 +58,15 @@ docker run -it  -p 5000:5000 -d flask
 
 
 ### Deploying the app to Heroku 
+1. Ensure that you have a heroku account -
+2. Deploy the app on heroku using the git repository -
+3. You should be able to have the following app :
+
 ![alt text](https://user-images.githubusercontent.com/77074782/106214837-eef39f00-61cf-11eb-9cad-7f421d3662d6.PNG)
 
 ### Data Visualisation on Dash 
 1. Run the visual.ipynb file
-2. Navigate to the generated URL 
+2. Navigate to the generated URL : http://127.0.0.1:8050/
+3 . Here's what your visualisations app will look like :
+
+![alt text] (https://user-images.githubusercontent.com/77074782/106250877-82e75a00-6214-11eb-8834-527a2cc2d9ab.PNG)
