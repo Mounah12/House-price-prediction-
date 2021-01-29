@@ -69,4 +69,4 @@ docker run -it  -p 5000:5000 -d flask
 2. Navigate to the generated URL : http://127.0.0.1:8050/
 3 . Here's what your visualisations app will look like :
 
-![alt text] (https://user-images.githubusercontent.com/77074782/106250877-82e75a00-6214-11eb-8834-527a2cc2d9ab.PNG)
+ ![alt text](https://user-images.githubusercontent.com/77074782/106214837-eef39f00-61cf-11eb-9cad-7f421d3662d6.PNG)(https://user-images.githubusercontent.com/77074782/106250877-82e75a00-6214-11eb-8834-527a2cc2d9ab.PNG)
