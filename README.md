@@ -1,17 +1,19 @@
 ## ML-Model-Flask-Deployment
-This is a demo project to elaborate how Machine Learn Models are deployed on production using Flask API
+This is a demostration project to explain how Machine Learning Models are deployed on production using Flask API , docker and HEROKU 
 
 ### Prerequisites
-You must have Scikit Learn, Pandas (for Machine Leraning Model) and Flask (for API) installed.
+You must have Scikit Learn, Pandas (for Machine Leraning Model) , Flask (for API) installed , Docker ( for deployement )a and a heroku account .
 
 ### Project Structure
-This project has four major parts :
-1. model.py - This contains code fot our Machine Learning model to predict employee salaries absed on trainign data in 'hiring.csv' file.
+This project has six major parts :
+1. model.py - This contains code for our Machine Learning model to predict house prices absed on trainign data in 'HousePricing.csv' file.
 2. app.py - This contains Flask APIs that receives employee details through GUI or API calls, computes the precited value based on our model and returns it.
 3. request.py - This uses requests module to call APIs already defined in app.py and dispalys the returned value.
-4. templates - This folder contains the HTML template to allow user to enter employee detail and displays the predicted employee salary.
+4. templates - This folder contains the HTML template to allow user to enter house detail and displays the predicted house price.
+5. requirements.txt ; procfile - necessary files for the deployement of the heroku app .
+6. Visual.ipynb - This contains the visualisations of the data on a dash application.
 
-### Running the project
+### Running the project on Flask
 1. Ensure that you are in the project home directory. Create the machine learning model by running below command -
 ```
 python model.py
@@ -27,11 +29,11 @@ By default, flask will run on port 5000.
 3. Navigate to URL http://localhost:5000
 
 You should be able to view the homepage as below :
-![alt text](http://www.thepythonblog.com/wp-content/uploads/2019/02/Homepage.png)
+![alt text](https://user-images.githubusercontent.com/77074782/106214031-3f69fd00-61ce-11eb-9c69-4ee17812be35.PNG)
 
-Enter valid numerical values in all 3 input boxes and hit Predict.
+Enter valid numerical values in all 5 input boxes and hit Predict.
 
-If everything goes well, you should  be able to see the predcited salary vaule on the HTML page!
+If everything goes well, you should  be able to see the predcited house price vaule on the HTML page!
 ![alt text](http://www.thepythonblog.com/wp-content/uploads/2019/02/Result.png)
 
 4. You can also send direct POST requests to FLask API using Python's inbuilt request module
@@ -39,3 +41,25 @@ Run the beow command to send the request with some pre-popuated values -
 ```
 python request.py
 ```
+
+### Running the project on Docker 
+1. Ensure that you have Docker installed and that you're in the project home directory . Create the dockerized image by running the following command -
+```
+docker image build -t flask
+```
+2. To make sure that your image has been created , run the following command 
+```
+docker image ls 
+```
+3. Now we should run our image :
+```
+docker run -it  -p 5000:5000 -d flask 
+```
+
+
+### Deploying the app to Heroku 
+
+
+### Data Visualisation on Dash 
+1. Run the visual.ipynb file
+2. Navigate to the generated URL 
