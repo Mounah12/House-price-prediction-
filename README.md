@@ -58,7 +58,7 @@ docker run -it  -p 5000:5000 -d flask
 
 
 ### Deploying the app to Heroku 
-
+! [alt text](https://user-images.githubusercontent.com/77074782/106214837-eef39f00-61cf-11eb-9cad-7f421d3662d6.PNG)
 
 ### Data Visualisation on Dash 
 1. Run the visual.ipynb file
